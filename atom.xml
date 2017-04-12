@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>韩建文的blog</title>
+  <subtitle>han jianwen javascript666666</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-04-12T15:34:23.203Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Han Jianwen</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/04/12/TEST/"/>
+    <id>http://yoursite.com/2017/04/12/TEST/</id>
+    <published>2017-04-12T15:32:51.553Z</published>
+    <updated>2017-04-12T15:34:23.203Z</updated>
+    
+    <content type="html"><![CDATA[<p>正文</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;正文&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Rex</title>
+    <link href="http://yoursite.com/2017/04/12/%E6%AD%A3%E5%88%99/"/>
+    <id>http://yoursite.com/2017/04/12/正则/</id>
+    <published>2017-04-12T15:25:12.342Z</published>
+    <updated>2017-04-12T15:26:35.633Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="正则一"><a href="#正则一" class="headerlink" title="正则一"></a>正则一</h1><p>标签（空格分隔）： JS</p>
+<hr>
+<h2 id="练习："><a href="#练习：" class="headerlink" title="练习："></a>练习：</h2><blockquote>
+<p>需求1：页面上有3个计数器，分别实现点击-文本框内的数字-1；点击+，文本框内的数字+1。其中数字最小为0，最大为4。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;item&quot;&gt;</div><div class="line">   &lt;button&gt;-&lt;/button&gt;</div><div class="line">   &lt;input type=&quot;text&quot; value=&quot;0&quot;&gt;</div><div class="line">   &lt;button&gt;+&lt;/button&gt;</div><div class="line"> &lt;/div&gt;</div><div class="line"> &lt;div class=&quot;item&quot;&gt;</div><div class="line">   &lt;button&gt;-&lt;/button&gt;</div><div class="line">   &lt;input type=&quot;text&quot; value=&quot;0&quot;&gt;</div><div class="line">   &lt;button&gt;+&lt;/button&gt;</div><div class="line"> &lt;/div&gt;</div><div class="line"> &lt;div class=&quot;item&quot;&gt;</div><div class="line">   &lt;button&gt;-&lt;/button&gt;</div><div class="line">   &lt;input type=&quot;text&quot; value=&quot;0&quot;&gt;</div><div class="line">   &lt;button&gt;+&lt;/button&gt;</div><div class="line"> &lt;/div&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>需求2：封装一个函数，参数为一个数组和一个布尔值，如果是true，那么就是求最大值，否则就是求最小值。</p>
+</blockquote>
+<h3 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h3><ul>
+<li>形参：就是函数定义时候的参数</li>
+<li>实参：就是函数执行时候传入的参数</li>
+</ul>
+<p>函数的形参和实参不一定是一一对应的，在调用函数的时候可以传入任意多个实参。</p>
+<h3 id="函数的属性："><a href="#函数的属性：" class="headerlink" title="函数的属性："></a>函数的属性：</h3><ul>
+<li>fn.length: 代表函数形参的个数</li>
+<li>arguments: 函数内部的一个属性，它的类型是一个类数组，它的作用就是用来保存实参的集合。<ul>
+<li>length：就代表实参的个数。</li>
+</ul>
+</li>
+</ul>
+<h3 id="关于arguments"><a href="#关于arguments" class="headerlink" title="关于arguments"></a>关于arguments</h3><p>函数之所以可以传入任意多个实参，实际上最终保存的地方都在这个类数组中。</p>
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><p><strong>return的作用：</strong></p>
+<ul>
+<li>用来指定函数的返回值，return后面是什么，那么函数执行的结果就是什么。</li>
+<li>return 后面的代码不会再继续执行，也就说它有终止函数执行的作用。</li>
+</ul>
+<h2 id="练习：-1"><a href="#练习：-1" class="headerlink" title="练习："></a>练习：</h2><blockquote>
+<p>需求1：页面上有3个计数器，分别实现点击-文本框内的数字-1；点击+，文本框内的数字+1。其中数字最小为0，最大为4。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;item&quot;&gt;</div><div class="line">   &lt;button&gt;-&lt;/button&gt;</div><div class="line">   &lt;input type=&quot;text&quot; value=&quot;0&quot;&gt;</div><div class="line">   &lt;button&gt;+&lt;/button&gt;</div><div class="line"> &lt;/div&gt;</div><div class="line"> &lt;div class=&quot;item&quot;&gt;</div><div class="line">   &lt;button&gt;-&lt;/button&gt;</div><div class="line">   &lt;input type=&quot;text&quot; value=&quot;0&quot;&gt;</div><div class="line">   &lt;button&gt;+&lt;/button&gt;</div><div class="line"> &lt;/div&gt;</div><div class="line"> &lt;div class=&quot;item&quot;&gt;</div><div class="line">   &lt;button&gt;-&lt;/button&gt;</div><div class="line">   &lt;input type=&quot;text&quot; value=&quot;0&quot;&gt;</div><div class="line">   &lt;button&gt;+&lt;/button&gt;</div><div class="line"> &lt;/div&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>需求2：封装一个函数，参数为一个数组和一个布尔值，如果是true，那么就是求最大值，否则就是求最小值。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">function result(arr, type)&#123;</div><div class="line">  var n;</div><div class="line">  if(type)&#123;</div><div class="line">    n = -Infinity;</div><div class="line">  &#125;else&#123;</div><div class="line">    n = Infinity;</div><div class="line">  &#125;</div><div class="line">  for(var i=0; i&lt;arr.length; i++)&#123;</div><div class="line">    if(type)&#123;</div><div class="line">      if(n &lt; arr[i])&#123;</div><div class="line">        n = arr[i];</div><div class="line">      &#125;</div><div class="line">    &#125;else&#123;</div><div class="line">      if(n &gt; arr[i])&#123;</div><div class="line">        n = arr[i];</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  return n;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var res = result([1,2,3,4]);</div><div class="line"></div><div class="line">console.log(res);</div></pre></td></tr></table></figure>
+<blockquote>
+<p>需求3：封装一个求和函数</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function sum()&#123;</div><div class="line">  var res = 0;</div><div class="line">  for(var i=0; i&lt;arguments.length; i++)&#123;</div><div class="line">    res += arguments[i];</div><div class="line">  &#125;</div><div class="line">  return res;</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(sum(1,2,3,4,3434,657,34,65,234,65));</div></pre></td></tr></table></figure>
+<h2 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h2><blockquote>
+<p>理解函数也是一种数据，可以向其它数据一样存放再变量中。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var fn = function (a,b)&#123;</div><div class="line">  var c = a + b;</div><div class="line">  return c;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var res = fn(1,2);</div><div class="line">console.log(res);</div></pre></td></tr></table></figure>
+<h3 id="函数表达式和函数声明的区别"><a href="#函数表达式和函数声明的区别" class="headerlink" title="函数表达式和函数声明的区别"></a>函数表达式和函数声明的区别</h3><blockquote>
+<p>函数声明的函数，可以在任意地方去调用。而函数声明，只能在声明函数之后去调用这个函数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<blockquote>
+<p>fuqiang@miaov.com</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;正则一&quot;&gt;&lt;a href=&quot;#正则一&quot; class=&quot;headerlink&quot; title=&quot;正则一&quot;&gt;&lt;/a&gt;正则一&lt;/h1&gt;&lt;p&gt;标签（空格分隔）： JS&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;练习：&quot;&gt;&lt;a href=&quot;#练习：&quot; class=&quot;headerlin
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/04/12/hello-world/"/>
+    <id>http://yoursite.com/2017/04/12/hello-world/</id>
+    <published>2017-04-12T14:39:42.664Z</published>
+    <updated>2017-04-12T14:39:42.664Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>这是一篇测试文章</title>
+    <link href="http://yoursite.com/2015/03/21/TEST2/"/>
+    <id>http://yoursite.com/2015/03/21/TEST2/</id>
+    <published>2015-03-21T07:13:48.000Z</published>
+    <updated>2017-04-12T15:42:47.183Z</updated>
+    
+    <content type="html"><![CDATA[<p>正文<br><img src="/images/test.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      这是一篇测试文章，用于测试Hexo文章文件头。
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>
